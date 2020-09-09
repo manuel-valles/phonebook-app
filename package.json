@@ -1,0 +1,34 @@
+{
+  "name": "phonebook-app",
+  "version": "1.0.0",
+  "description": "A phone book application for https://app.hackajob.co/hack/1414",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd -f config/dev.env nodemon src/index.js",
+    "test": "env-cmd -f config/test.env jest --watch --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "phone book app",
+    "hackajob",
+    "challenge"
+  ],
+  "author": "Manuel Valles",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.2",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
